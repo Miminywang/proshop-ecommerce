@@ -1,9 +1,9 @@
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
-import { useGetProductsQuery } from '../slices/productsApiSlice';
+import { useGetproductsQuery } from '../slices/productsApiSlice.js';
 
 const HomeScreen = () => {
-  const { data: products, isLoading, error } = useGetProductsQuery();
+  const { data: products, isLoading, error } = useGetproductsQuery();
 
   return (
     <>
@@ -25,5 +25,6 @@ const HomeScreen = () => {
     </>
   );
 };
+
 
 export default HomeScreen;
